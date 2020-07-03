@@ -29,37 +29,38 @@ var x = Vue.component('card_assembl',
     `
     <div class="card">
         <img :src="imgs" />
-        <br>
+        <br><br>
         <b>{{name}}</b>
-        <br>
+        <br><br>
         <p>{{text}}</p>
         <table border="0" cellspacing="10pt">
             <tr>
                 <td>
-                    <p style="font-family: Rubik; font-size: 10px; line-height: 14px; color:#7D7D7D">необходимо собрать</p>
+                    <p class="smallq">необходимо собрать</p>
                 </td>
                 <td>
-                    <p style="font-family: Rubik; font-size: 10px; line-height: 14px; color:#7D7D7D">конец</p>
+                    <p class="smallq">конец</p>
                 </td>
             </tr>
             <tr>
                 <td>
-                        <b style="font-family: Rubik; font-size: 12px; font-weight: bold; line-height: 20px; color:#8DCA78">45 194</b>
-                        <b style="font-family: Rubik; font-size: 12px; font-weight: bold; line-height: 20px; color:#7D7D7D">из 1 000 000 RUB</b>
+                    <b>
+                        <h style="color:#00BB00">45194</h>
+                        <h>из 1 000 000 RUB</h>
+                    </b>
                 </td>
                 <td>
-                    <b style="font-family: Rubik; font-size: 12px; line-height: 20px; color:#7D7D7D">завтра</b>
+                    <b>завтра</b>
                 </td>
             </tr>
         </table>
-        <div>
-            <button disabled class="tagq">помочь нуждающимся</button>
-            <button disabled class="tagq">закят</button>
-        </div>
-        <br>
-        <div style="margin:auto;">
+        <button disabled class="tagq">помочь нуждающимся</button>
+        <button disabled class="tagq">закят</button>
+        <br><br>
+        <div style="width:40px; height:40px; margin:auto;">
             <button class="button_circle">+</button>
         </div>
+        <br>
     </div>
     `
 })
